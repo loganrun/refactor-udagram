@@ -6,10 +6,10 @@ services:
           - 8080:8080
       restart: always
       depends_on:
-        - udagram-user
+        - udagram-users
         - udagram-feed
-  udagram-user:
-    image: loganrun2020/refactor-udagram:udagram-user
+  udagram-users:
+    image: loganrun2020/refactor-udagram:udagram-users
     environment:
       POSTGRES_USERNAME: $POSTGRES_USERNAME
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD

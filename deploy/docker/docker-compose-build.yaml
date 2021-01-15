@@ -6,7 +6,7 @@ services:
     image: loganrun2020/refactor-udagram:reverseproxy
   udagram-user:
     build:
-      context: ../../udagram-user
+      context: ../../udagram-users
     image: loganrun2020/refactor-udagram:udagram-user
   udagram-feed:
     build:

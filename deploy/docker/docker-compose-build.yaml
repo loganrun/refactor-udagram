@@ -1,16 +1,16 @@
-version: "3"
+version: "1"
 services:
   reverseproxy:
     build:
       context: .
     image: loganrun2020/refactor-udagram:reverseproxy
-  backend_user:
+  udagram-user:
     build:
-      context: ../../backend-user-api
+      context: ../../udagram-user
     image: loganrun2020/refactor-udagram:udagram-user
-  backend_feed:
+  udagram-feed:
     build:
-      context: ../../backend-feed-api
+      context: ../../udagram-feed
     image: loganrun2020/refactor-udagram:udagram-feed
   frontend:
     build:

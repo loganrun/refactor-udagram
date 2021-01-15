@@ -14,5 +14,5 @@ services:
     image: loganrun2020/refactor-udagram:udagram-feed
   frontend:
     build:
-      context: ../../frontend
+      context: ../../udagram-frontend
     image: loganrun2020/refactor-udagram:udagram-frontend

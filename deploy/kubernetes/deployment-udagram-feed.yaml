@@ -5,7 +5,7 @@ metadata:
     service: udagram-feed
   name: udagram-feed
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       service: udagram-feed
@@ -15,7 +15,7 @@ spec:
         service: udagram-feed
     spec:
       containers:
-      - image: loganrun2020/udagram-feed:udagram-feed
+      - image: loganrun2020/udagram-feed
         name: udagram-feed
         imagePullPolicy: Always
         resources:

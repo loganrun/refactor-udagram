@@ -5,7 +5,7 @@ metadata:
     service: udagram-users
   name: udagram-users
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       service: udagram-users
@@ -15,7 +15,7 @@ spec:
         service: udagram-users
     spec:
       containers:
-      - image: loganrun2020/udagram-users:udagram-users
+      - image: loganrun2020/udagram-users
         name: udagram-users
         imagePullPolicy: Always
         resources:

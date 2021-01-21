@@ -5,7 +5,7 @@ metadata:
     service: reverseproxy
   name: reverseproxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       service: reverseproxy
@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: loganrun2020/reverseproxy
+      - image: loganrun2020/reverseproxy:1.1
         name: reverseproxy
         imagePullPolicy: Always
         resources:

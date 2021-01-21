@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-      - image: loganrun2020/udagram-front
+      - image: loganrun2020/udagram-front:1.1
         name: udagram-front
         imagePullPolicy: Always
         ports:

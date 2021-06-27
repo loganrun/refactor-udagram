@@ -22,6 +22,6 @@ install:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push loganrun2020/refactor-udagram:reverseproxy:1.1
-  - docker push loganrun2020/refactor-udagram:udagram-user:1.6
-  - docker push loganrun2020/refactor-udagram:udagram-feed:1.6
+  - docker push loganrun2020/refactor-udagram:udagram-user:1.8
+  - docker push loganrun2020/refactor-udagram:udagram-feed:1.8
   - docker push loganrun2020/refactor-udagram:udagram-front:1.1

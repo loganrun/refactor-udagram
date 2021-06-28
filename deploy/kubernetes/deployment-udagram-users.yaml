@@ -15,7 +15,7 @@ spec:
         service: udagram-users
     spec:
       containers:
-      - image: loganrun2020/udagram-users:1.9
+      - image: loganrun2020/udagram-users
         name: udagram-users
         imagePullPolicy: Always
         resources:

@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: loganrun2020/reverseproxy:1.1
+      - image: loganrun2020/reverseproxy
         name: reverseproxy
         imagePullPolicy: Always
         resources:

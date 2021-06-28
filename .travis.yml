@@ -20,7 +20,7 @@ install:
     - docker-compose -f deploy/docker/docker-compose-build.yaml build --parallel
 
 after_success:
-  - echo "DOCKER_PASSWORD" | docker login -u "DOCKER_USERNAME" --password-stdin
+  - echo "$(DOCKER_PASSWORD)" | docker login -u "$(DOCKER_USERNAME)" --password-stdin
   - docker push loganrun2020/refactor-udagram:reverseproxy:1.1
   - docker push loganrun2020/refactor-udagram:udagram-user:1.9
   - docker push loganrun2020/refactor-udagram:udagram-feed:1.9

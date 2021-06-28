@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: .
-    image: loganrun2020/refactor-udagram:reverseproxy
+    image: loganrun2020/reverseproxy
   udagram-user:
     build:
       context: ../../udagram-users
-    image: loganrun2020/refactor-udagram:udagram-user
+    image: loganrun2020/udagram-user
   udagram-feed:
     build:
       context: ../../udagram-feed
-    image: loganrun2020/refactor-udagram:udagram-feed
+    image: loganrun2020/udagram-feed
   frontend:
     build:
       context: ../../udagram-frontend
-    image: loganrun2020/refactor-udagram:udagram-frontend
+    image: loganrun2020/udagram-frontend
